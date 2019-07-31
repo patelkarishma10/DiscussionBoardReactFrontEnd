@@ -30,7 +30,7 @@ export class ItemForm extends Component {
                     <label for="accUsername" id="accUsernameLabel">Username: </label>
                     <input type="text" id="accUsername" class="form-control" required />
                     <br />
-                    
+
                     <label for="accContent" id="accContentLable">content: </label>
                     <input type="content" id="accContent" class="form-control" required />
                     <br />
