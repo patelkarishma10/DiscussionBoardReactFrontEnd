@@ -36,3 +36,19 @@ li a {
 li a:hover {
     background-color: #111111;
 }
+
+.formDiv {
+    margin: auto;
+    width: 60%;
+    border: 3px solid;
+    border-color: #2571db;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(37, 113, 219, .1)
+}
+
+form {
+    display: inline-block;
+    width: 70%;
+    border-bottom-width: medium;
+}
