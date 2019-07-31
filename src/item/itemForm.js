@@ -13,18 +13,18 @@ export class ItemForm extends Component {
         };
     }
 
-    // componentDidUpdate = () => {
-    //     axios
-    //         .get("http://localhost:5000/item/all")
-    //         .then(response => {
-    //             this.setState({
-    //                 data: response.data
-    //             });
-    //             //{ this.componentDidMount }
+    componentDidUpdate = () => {
+        axios
+            .get("http://localhost:5000/item/all")
+            .then(response => {
+                this.setState({
+                    data: response.data
+                });
+                //{ this.componentDidMount }
 
 
-    //         })
-    // }
+            })
+    }
 
     makeRequest = (e) => {
         e.preventDefault();
@@ -38,7 +38,7 @@ export class ItemForm extends Component {
 
             .then(response => {
                 { console.log("created webpage") }
-                // {console.log(response.data)}
+                //componentDidUpdate();
                 this.setState({
                     data: response.data
                 });
