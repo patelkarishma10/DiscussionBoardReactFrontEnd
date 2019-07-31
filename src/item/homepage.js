@@ -14,9 +14,9 @@ export class Homepage extends Component {
                 <Table>
                     <tbody>
                         {_.reverse(this.props.dataSent).map((item) => (
-                            <tr>
-                                 <td><Item passedFunction={this.props.passedFunction} username={item.username} email={item.email} id={item._id} content={item.content}/></td> 
-                            </tr>
+
+                                 <Item passedFunction={this.props.passedFunction} username={item.username} email={item.email} id={item._id} content={item.content}/> 
+
                         ))}
                     </tbody>
                 </Table>
